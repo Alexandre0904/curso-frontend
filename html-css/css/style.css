@@ -1,0 +1,190 @@
+/*
+
+	Arquivo CSS geral com estilos dos elementos de todas as páginas
+
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	font-family: serif;
+	font-size: 62.5%; /* equivalente a 10px */
+}
+
+body {
+	font-family: arial, helvetica, sans-serif;
+	background-color: rgb(55, 119, 151);
+}
+
+/* Style the header */
+header {
+	background-color: rgb(201, 128, 225);
+	padding: 20px;
+	text-align: center ;
+	font-size: 25px;
+	color: rgb(33, 61, 4);
+}
+/* Create two columns/boxes that floats next to each other */
+
+article center {
+	float: left;
+	padding: 20px;
+	width: 60%;
+	
+
+}
+/* Clear floats after the columns */
+section after {
+	content: "200s";
+	display: table;
+	clear: both;
+}
+form {
+	background: rgb(45, 153, 92);
+	padding: 40px;
+}
+
+
+/* Style the footer */
+footer {
+	background-color: rgb(119, 224, 147);
+	padding: 0.8px;
+	text-align: center;
+	color: rgb(200, 200, 225);
+}
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+	nav, article {
+		width: 100%;
+		height: auto;
+	}
+	
+}
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.8rem;
+}
+
+h1, h2, p, li {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #0f2b51;
+	text-align: center;
+}
+
+a {
+	color: rgb(238, 245, 245);
+	text-decoration: none;
+}
+/*
+#primeiro-link > a {
+	color: #933;
+}*/
+
+/*ul {
+	font-size: 20px;
+}*/
+
+ul li {
+	font-size: 0.8ren; /* equivalente a 16px */
+	font-size: 1.6rem; /* equivalente a 16px */
+	width: 20%;
+	height: 3rem; /*equivalente a 30px */
+}
+
+p {
+	font-size: 1.6rem; /* equivalente a 16px */
+}
+
+
+
+h2 {
+	font-size: 2rem; /* equivalente a 20px */
+	height: 3rem;
+}
+
+.navegacao {
+	background-color: rgb(31, 25, 141);
+
+}
+
+/*.navegacao li {
+	border-bottom: 1px solid #ccc;
+	display: block;
+	padding: 1rem 1rem 2rem 1rem;
+	line-height: 1.2rem;
+}*/
+
+/*.navegacao a {
+	color: #66f;
+	display: block;
+	margin-bottom: .5rem;
+	width: 100%;
+}*/
+
+form {
+	background: rgb(27, 167, 118);
+	padding: .5px;
+	text-align: center;
+}
+
+form div {
+	background: rgb(135, 197, 34);
+	border-bottom: 1px solid #33f;
+	margin: 1rem;
+	padding: 1rem;
+
+}
+
+label {
+	font-size: 2rem;
+	border: 2rem;
+	
+	
+}
+
+input {
+	box-sizing: border-box black;
+	border-radius: 10px;
+	text-align: center;
+	
+}
+
+/* Botão Final de Café */
+.coffee-button {
+    display: inline-block;
+    background-color: #6f4e37; /* Cor de fundo do café */
+    color: #fff; /* Texto branco */
+    padding: 15px 30px; /* Espaçamento interno */
+    border-radius: 5px; /* Cantos arredondados */
+    font-size: 18px;
+    text-decoration: none; /* Garante que não haja sublinhado */
+    transition: background-color 0.3s; /* Efeito de transição suave */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+/* Imagem dentro do botão */
+.coffee-image {
+    width: 40px; /* Defina o tamanho desejado para a imagem */
+    height: auto;
+    margin-right: 10px; /* Espaço entre a imagem e o texto */
+}
+
+/* Efeito de hover para o botão */
+.coffee-button:hover {
+    background-color: #4a3d29; /* Cor mais escura ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .coffee-button {
+        width: 100%; /* Botão ocupa 100% da largura na tela pequena */
+        text-align: center;
+    }
+}
