@@ -36,3 +36,6 @@ são ramificações / versões paralelas
 - develop
 - DOD Dsefinition of Done: critérios de aceite
 - versionamento 1.0.0
+
+### Merge
+mescla de branchs
