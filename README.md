@@ -37,8 +37,19 @@ são ramificações / versões paralelas
 - DOD Dsefinition of Done: critérios de aceite
 - versionamento 1.0.0
 
-git checkout -b dev (cria uma branch)
-git checkout master (mudar de branch)
+- git checkout -b dev (cria uma branch)
+- git checkout master (mudar de branch)
 
 ### Merge
-mescla de branchs
+- mescla de branchs
+Você pode precisar resolver conflitos manualmente
+- git merge main
+
+### Pull Requests
+- Mescla de branchs no repositório
+- Permite code review
+- O repositório resolve os conflitos automaticamente
+
+### Configura o GitFlow
+- git flow init
+- git flow feature start {nome-da-feature}
