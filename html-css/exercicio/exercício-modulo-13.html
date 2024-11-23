@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios Resolvidos</title>
+</head>
+<body>
+    <h1>Exercícios de JavaScript - Resolução</h1>
+
+    <h2>Exercício 1</h2>
+    <div>
+        <script>
+            document.write("<h3>Operações Matemáticas</h3>");
+            let result = 10 + 15;
+            document.write(`<p>10 + 15 = ${result} (typeof: ${typeof result})</p>`);
+
+            document.write("<h3>Operações com Strings e Números</h3>");
+            document.write(`<p>"10" + 2 = "102" (typeof: ${typeof ("10" + 2)})</p>`);
+            document.write(`<p>"10" * 2 = ${"10" * 2}</p>`);
+            document.write(`<p>"10" / 3 = ${"10" / 3}</p>`);
+            document.write(`<p>"10" & 3 = ${"10" & 3}</p>`);
+            document.write(`<p>10 + true = ${10 + true}</p>`);
+            document.write(`<p>10 == "10" = ${10 == "10"}</p>`);
+            document.write(`<p>10 === "10" = ${10 === "10"}</p>`);
+            document.write(`<p>10 < 11 = ${10 < 11}</p>`);
+            document.write(`<p>10 > 12 = ${10 > 12}</p>`);
+            document.write(`<p>10 <= 10.1 = ${10 <= 10.1}</p>`);
+            document.write(`<p>10 > 9.99 = ${10 > 9.99}</p>`);
+            document.write(`<p>10 != "dez" = ${10 != "dez"}</p>`);
+            document.write(`<p>"dez" + true = ${"dez" + true}</p>`);
+            document.write(`<p>10 * false = ${10 * false}</p>`);
+            document.write(`<p>true + true = ${true + true}</p>`);
+
+            let num1 = 10;
+            num1++;
+            document.write(`<p>Incremento: 10++ = ${num1}</p>`);
+
+            let num2 = 10;
+            num2--;
+            document.write(`<p>Decremento: 10-- = ${num2}</p>`);
+
+            document.write("<h3>Operadores Bit a Bit</h3>");
+            document.write(`<p>1 & 1 = ${1 & 1}</p>`);
+            document.write(`<p>1 & 0 = ${1 & 0}</p>`);
+            document.write(`<p>0 & 0 = ${0 & 0}</p>`);
+            document.write(`<p>1 | 0 = ${1 | 0}</p>`);
+
+            document.write("<h3>Outras Operações</h3>");
+            document.write(`<p>0 / 1 = ${0 / 1}</p>`);
+            document.write(`<p>5 + 5 == 10 = ${5 + 5 == 10}</p>`);
+            document.write(`<p>"5" + "5" == 10 = ${"5" + "5" == 10}</p>`);
+            document.write(`<p>"5" * 2 > 9 = ${"5" * 2 > 9}</p>`);
+            document.write(`<p>(10 + 10) * 2 = ${(10 + 10) * 2}</p>`);
+            document.write(`<p>10 + 10 * 2 = ${10 + 10 * 2}</p>`);
+        </script>
+    </div>
+
+    <h2>Exercício 2</h2>
+    <div>
+        <script>
+            document.write("<h3>Comparações</h3>");
+            var branco = "preto";
+            var cinza = "branco";
+            var carro = "preto";
+
+            document.write(`<p>a) branco == "branco": ${branco == "branco"}</p>`);
+            document.write(`<p>b) branco == cinza: ${branco == cinza}</p>`);
+            document.write(`<p>c) carro === branco: ${carro === branco}</p>`);
+
+            var cavalo = carro == "preto" ? "cinza" : "marron";
+            document.write(`<p>d) cavalo = ${cavalo}</p>`);
+
+            document.write("<h3>Parcelamento</h3>");
+            var valor = 30000;
+            var entrada = 3000;
+            var prestacao = 750;
+            var valorFinanciado = valor - entrada;
+            var numeroPrestacoes = valorFinanciado / prestacao;
+            document.write(`<p>e) Número de prestações: ${numeroPrestacoes}</p>`);
+
+            document.write("<h3>Concatenação de Strings</h3>");
+            var preto = "cinza";
+            var cores = branco + preto + cinza + carro;
+            document.write(`<p>f) Comprimento da string formada: ${cores.length}</p>`);
+        </script>
+    </div><br>
+
+        //---------------------------------------------------------------------------------
+    <div>
+        <h2>// Exercício 1 </h2><br><br>
+
+        // Adição<br>
+        let result = 10 + 15;<br>
+        console.log(result); // 25<br>
+        console.log(typeof result); // "number"<br><br>
+        
+        // Operações com strings e números<br>
+        console.log("10" + 2); // "102" (string)<br>
+        console.log("10" * 2); // 20 (number)<br>
+        console.log("10" / 3); // 3.333... (float)<br>
+        console.log("10" & 3); // 1 (number)<br>
+        console.log(10 + true); // 11 (number)<br>
+        console.log(10 == "10"); // true (boolean)<br>
+        console.log(10 === "10"); // false (boolean)<br>
+        console.log(10 < 11); // true (boolean)<br>
+        console.log(10 > 12); // false (boolean)<br>
+        console.log(10 <= 10.1); // true (boolean)<br>
+        console.log(10 > 9.99); // true (boolean)<br>
+        console.log(10 != "dez"); // true (boolean)<br>
+        console.log("dez" + true); // "deztrue" (string)<br>
+        console.log(10 * false); // 0 (number)<br>
+        console.log(true + true); // 2 (number)<br><br>
+        
+        // Incremento e decremento<br>
+        let num1 = 10;<br>
+        num1++;<br>
+        console.log(num1); // 11<br><br>
+        
+        let num2 = 10;<br>
+        num2--;<br>
+        console.log(num2); // 9<br><br>
+        
+        // Operadores bit a bit<br>
+        console.log(1 & 1); // 1 (number)<br>
+        console.log(1 & 0); // 0 (number)<br>
+        console.log(0 & 0); // 0 (number)<br>
+        console.log(1 | 0); // 1 (number)<br><br>
+        
+        // Outras operações<br>
+        console.log(0 / 1); // 0 (number)<br>
+        console.log(5 + 5 == 10); // true (boolean)<br>
+        console.log("5" + "5" == 10); // false (boolean)<br>
+        console.log("5" * 2 > 9); // true (boolean)<br>
+        console.log((10 + 10) * 2); // 40 (number)<br>
+        console.log(10 + 10 * 2); // 30 (number)<br><br>
+        
+        // ---------------------------------------------------------------------------------
+        
+        <h2>// Exercício 2</h2><br><br>
+        
+        // a) branco == "branco"<br>
+        var branco = "preto";<br>
+        console.log(branco == "branco"); // false<br><br>
+        
+        // b) branco == cinza<br>
+        var cinza = "branco";<br>
+        console.log(branco == cinza); // false<br><br>
+        
+        // c) carro === branco<br>
+        var carro = "preto";<br>
+        console.log(carro === branco); // true (se ambos forem "preto")<br><br>
+        
+        // d) cavalo usando operador ternário<br>
+        var cavalo = carro == "preto" ? "cinza" : "marron";<br>
+        console.log(cavalo); // "cinza"<br><br>
+        
+        // e) Número de prestações para pagar o carro<br>
+        var valor = 30000;<br>
+        var entrada = 3000;<br>
+        var prestacao = 750;<br>
+        var valorFinanciado = valor - entrada;<br>
+        var numeroPrestacoes = valorFinanciado / prestacao;<br>
+        console.log(numeroPrestacoes); // 36<br><br>
+        
+        // f) Comprimento da string formada pelas variáveis de cores<br>
+        var preto = "cinza";<br>
+        var cores = branco + preto + cinza + carro;<br>
+        console.log(cores.length); // 22 (sem contar espaços)</div>
+</body>
+</html>
